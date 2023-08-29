@@ -1,4 +1,5 @@
 # daodao-android
 Daodao for Android
 
-- [x] 测试
+- [x] 错的
+- [√] 对的
