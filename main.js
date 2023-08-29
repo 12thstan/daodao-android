@@ -1,5 +1,5 @@
 /*
-    Beta 1.4.2(C)    by:Reverse     声明:代码仅供学习
+    Beta 1.4.2(D)    by:Reverse     声明:代码仅供学习
 */
 
 "ui";
@@ -14,7 +14,7 @@ ui.layout(
 
             <card w="*" h="45" margin="10 5" cardCornerRadius="2dp" cardElevation="1dp" gravity="center_vertical">      //卡片布局(固定顶端)
                 <vertical padding="18 8" h="auto">
-                    <text text="当前版本Beta 1.4.2(C)                  by:Reverse" textSize="16sp" padding="3" textColor="#FFCD7F32" />
+                    <text text="当前版本Beta 1.4.2(D)                  by:Reverse" textSize="16sp" padding="3" textColor="#FFCD7F32" />
                 </vertical>
                 <View bg="#f44336" h="*" w="10" />
             </card>
@@ -53,8 +53,12 @@ ui.layout(
                         <button id="b5" text="域名检测" w="100" h="50" margin="5 5" />
                         <button id="b6" text="" style="Widget.AppCompat.Button.Borderless" w="50" h="50" margin="5 5" />
                     </horizontal>
-
-                    <button id="b7" text="密码检测(单次)" w="120" h="50" margin="5 5" />
+                    
+                    <horizontal gravity="left">
+                        <button id="b7" text="密码检测(单次)" w="120" h="50" margin="5 5" />
+                        <button id="b9" text="强制停止脚本" style="Widget.AppCompat.Button.Borderless.Colored" w="120" h="50" margin="5 5" />
+                    </horizontal>
+                    
                     <button id="b1" text="确定" style="Widget.AppCompat.Button.Colored" w="*" h="50" margin="5 5" />
                 </vertical>
 
@@ -91,10 +95,10 @@ ui.layout(
 );
 
 //关于
-ui.t6.setText("  Github： github.com/12thstan/daodao-android\n  Gitee： \n");
-ui.t1.setText("  1.  填入域名和密码点击确定即可(需要悬浮窗权限)。\n  2.  只查询和域名检测可以只填域名。\n  3.  每修改域名和密码都需要点击确定保存。\n");
+ui.t6.setText("  Github： github.com/12thstan/daodao-android\n  Gitee： gitee.com/c12th/daodao-android\n");
+ui.t1.setText("  1.  请确保在网络正常下使用。\n  2.  填入域名和密码点击确定即可。\n  3.  第一次使用和修改密码都需要点击密码检测。\n  4.  只查询(需要悬浮窗权限)和域名检测可以只填域名。\n  5.  每次修改域名和密码都需要点击确定。\n");
 ui.t5.setText("  Daodao for Ios icloud.com/shortcuts/06fc462d4b4b4f668b16cb11e2e9d010\n  作者：冰糖红茶 https://github.com/Rock-Candy-Tea\n\n  Daodao for Bash github.com/LittFlower/daodao-bash\n  作者：许江一墨 https://github.com/LittFlower\n")
-ui.t2.setText("  GitHub: github.com\n  Gitee: gitee.com/c12th\n  CSDN: blog.csdn.net/qq_39788788\n  Blog: blog.c12th.cn\n");
+ui.t2.setText("  GitHub: github.com/12thstan\n  Gitee: gitee.com/c12th\n  CSDN: blog.csdn.net/qq_39788788\n  Blog: blog.c12th.cn\n");
 ui.t4.setText("by:Reverse\n");
 
 //创建选项菜单(右上角)
@@ -107,10 +111,12 @@ ui.emitter.on("create_options_menu", menu => {
 ui.emitter.on("options_item_selected", (e, item) => {
     switch (item.getTitle()) {
         case "日志":
-            alert("当前版本Beta 1.4.2(C) \n" +
+            alert("当前版本Beta 1.4.2(D) \n" +
                 "\n 1.查询(旧)加上空位检测，并修正其他空位检测 \n" +
                 "\n 2.完善了日志和关于页面的内容 \n" +
-                "\n 3.新添加了启动画面 \n"
+                "\n 3.新添加了启动画面 \n" +
+                "\n 4.新添加强制停止脚本按钮 \n" + 
+                "\n 2023.08.29"
             );
             break;
 
@@ -300,6 +306,11 @@ ui.b1.on("click", () => {
     });
 })
 
+//关闭所有脚本
+ui.b9.on("click", function () {
+    engines.stopAllAndToast();
+});
+
 //复选判定
 ui.r1.on("check", (checked) => {
     if (ui.r1.isChecked()) {
@@ -335,13 +346,6 @@ ui.r4.on("check", (checked) => {
 
 //空位检测
 ui.b1.click(() => {
-    //悬浮窗权限
-    if (!是否有悬浮窗权限()) {
-        toast("请打开悬浮窗权限!");
-        申请悬浮窗权限();
-        return;
-    }
-
     var text = ui.i1.text();
     if (text.length == 0) {
         ui.i1.setError("输入不能为空");
@@ -390,6 +394,12 @@ ui.b3.on("long_click", function () {
 
 //查询
 ui.b8.on("click", function () {
+    //悬浮窗权限
+    if (!是否有悬浮窗权限()) {
+        toast("请打开悬浮窗权限!");
+        申请悬浮窗权限();
+        return;
+    }
     var text = ui.i1.text();
     if (text.length == 0) {
         ui.i1.setError("输入不能为空");
