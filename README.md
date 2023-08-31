@@ -18,10 +18,10 @@
 ---
 
 ## 其他版本
-[Daodao for Ios](icloud.com/shortcuts/06fc462d4b4b4f668b16cb11e2e9d010)  
+[Daodao for Ios](https://icloud.com/shortcuts/06fc462d4b4b4f668b16cb11e2e9d010)  
 作者：[冰糖红茶](https://github.com/Rock-Candy-Tea)  
 
-[Daodao for Bash](github.com/LittFlower/daodao-bash)  
+[Daodao for Bash](https://github.com/LittFlower/daodao-bash)  
 作者：[许江一墨](https://github.com/LittFlower)
 
 ---
