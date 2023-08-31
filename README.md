@@ -1,6 +1,6 @@
 # Daodao for Android
 
-## 使用教程
+## 使用教程：
 1.  请确保在网络正常下使用。
 2.  填入域名和密码点击确定即可。
 3.  第一次使用和修改密码都需要点击密码检测。
@@ -9,7 +9,7 @@
 
 ---
 
-## 功能
+## 功能：
 - [x] 密码检测
 - [x] 域名检测
 - [x] 常规指令
@@ -17,7 +17,7 @@
 
 ---
 
-## 其他版本
+## 其他版本：
 [Daodao for Ios](https://icloud.com/shortcuts/06fc462d4b4b4f668b16cb11e2e9d010)  
 作者：[冰糖红茶](https://github.com/Rock-Candy-Tea)  
 
