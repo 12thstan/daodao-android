@@ -25,3 +25,9 @@
 作者：[许江一墨](https://github.com/LittFlower)
 
 ---
+
+## 补充
+- github开源：https://github.com/12thstan/daodao-android
+- gitee开源：https://gitee.com/c12th/daodao-android
+- 原文：https://blog.c12th.cn/archives/17.html
+---
