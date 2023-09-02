@@ -9,7 +9,7 @@ key();
 function key() {
   http.get("www.baidu.com", {}, function (res, err) {
     if (err) {
-      toast("网络异常");
+      toast("网络异常!");
       return;
     }
     sleep(200);
@@ -18,12 +18,12 @@ function key() {
     var r = http.get(url);
     var txt = r.body.string();
     if (txt == "Please enter the correct password") {
-      toast("密码错误");
+      toast("密码错误!");
       sleep(200);
       m0();
     }
     else {
-      toast("密码正确！");
+      toast("密码正确");
       sleep(200);
       m1();
     }
@@ -31,7 +31,7 @@ function key() {
     var dn = require("./dn.js");
 
     sleep(300);
-    toast("已执行，请重启软件!");
+    toast("已执行，请重启软件");
   });
 }
 
