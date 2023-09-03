@@ -1,6 +1,9 @@
 # Daodao for Android
-<img src="https://unpkg.com/reverse-stu-allversions@latest/img/daodao.jpg" width="800" />
-<img src="https://unpkg.com/reverse-stu-allversions@1.0.33/img/%E5%8A%A8%E7%94%BB.jpg" width="800" />
+
+<img src="https://www.unpkg.com/reverse-stu-allversions@latest/img/daodao.jpg" width="80" />
+
+<img src="https://www.unpkg.com/reverse-stu-allversions@1.0.33/img/%E5%8A%A8%E7%94%BB.jpg" width="80" />
+
 **<p align = "center">效果展示</p>**
 
 ---
@@ -21,7 +24,7 @@
 - [x] 查询系统
 
 查询中
-<img src="https://unpkg.com/reverse-stu-allversions@1.0.33/img/%E5%8C%BA%E5%88%86.png" width="800" />
+<img src="https://www.unpkg.com/reverse-stu-allversions@1.0.33/img/%E5%8C%BA%E5%88%86.png" width="80" />
 
 - 查询(旧) 与 q=__关联 [默认10]
 - 查询 与 daodao.js关联 [默认10]
