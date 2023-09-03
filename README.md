@@ -21,13 +21,15 @@
 - [x] 常规指令
 - [x] 查询系统
 
-注：**查询** 中
+<br>
 
-<img src="https://unpkg.com/reverse-stu-allversions@1.0.33/img/%E5%8C%BA%E5%88%86.png" width="300" />
+**注：查询 中**
 
-- **查询(旧)** 与 **q=__** 关联 [默认10]
+<img src="https://unpkg.com/reverse-stu-allversions@1.0.33/img/%E5%8C%BA%E5%88%86.png" width="400" />
 
-- *查询* 与 *daodao.js* 关联 [默认10]
+- **查询(旧)** 与 **q=__** 关联
+
+- *查询* 与 *daodao.js* 关联
 ```js
  var bbsurl = "域名/api?q=10"
 ```
