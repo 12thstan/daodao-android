@@ -1,4 +1,9 @@
 # Daodao for Android
+<img src="https://unpkg.com/reverse-stu-allversions@latest/img/daodao.jpg" width="800" />
+<img src="https://unpkg.com/reverse-stu-allversions@1.0.33/img/%E5%8A%A8%E7%94%BB.jpg" width="800" />
+**<p align = "center">效果展示</p>**
+
+---
 
 ## 使用教程：
 1.  请确保在网络正常下使用。
@@ -15,6 +20,14 @@
 - [x] 常规指令
 - [x] 查询系统
 
+查询中
+<img src="https://unpkg.com/reverse-stu-allversions@1.0.33/img/%E5%8C%BA%E5%88%86.png" width="800" />
+
+- 查询(旧) 与 q=__关联 [默认10]
+- 查询 与 daodao.js关联 [默认10]
+```js
+ var bbsurl = "域名/api?q=10"
+```
 ---
 
 ## 其他版本：
@@ -30,4 +43,5 @@
 - github开源：https://github.com/12thstan/daodao-android
 - gitee开源：https://gitee.com/c12th/daodao-android
 - 原文：https://blog.c12th.cn/archives/17.html
+
 ---
