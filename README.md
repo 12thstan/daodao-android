@@ -1,6 +1,6 @@
 # Daodao for Android
-<img src="https://cdn.c12th.cn/reverse-stu-allversions@1.0.36/img/%E5%8A%A8%E7%94%BB.webp" width="300" align=left />
-<img src="https://cdn.c12th.cn/reverse-stu-allversions@1.0.36/img/daodao.webp" width="300" />
+<img src="https://unpkg.com/reverse-stu-allversions@1.0.36/img/%E5%8A%A8%E7%94%BB.webp" width="300" align=left />
+<img src="https://unpkg.com/reverse-stu-allversions@1.0.36/img/daodao.webp" width="300" />
 
 **<p align = "center">效果展示</p>**
 
@@ -25,7 +25,7 @@
 
 **注：查询 中**
 
-<img src="https://cdn.c12th.cn/reverse-stu-allversions@1.0.36/img/%E5%8C%BA%E5%88%86.webp" width="400" />
+<img src="https://unpkg.com/reverse-stu-allversions@1.0.36/img/%E5%8C%BA%E5%88%86.webp" width="400" />
 
 - **查询(旧)** 与 **q=__** 关联
 
