@@ -25,7 +25,7 @@
 
 **注：查询 中**
 
-<img src="https://unpkg.com/reverse-stu-allversions@1.0.33/img/%E5%8C%BA%E5%88%86.png" width="400" />
+<img src="https://cdn.c12th.cn/reverse-stu-allversions@1.0.36/img/%E5%8C%BA%E5%88%86.webp" width="400" />
 
 - **查询(旧)** 与 **q=__** 关联
 
